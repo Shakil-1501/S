@@ -64,4 +64,7 @@ class Rectangle:
             return self.width==other.width and self.height=other.height
         else:
              return False
+			 
+    def __str__(self):
+        return 'Rectangle: width={0}, height={1}'.format(self._width, self._height)
         
