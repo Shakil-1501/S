@@ -33,7 +33,7 @@ class Rectangle:
         if width <=0:
             raise ValueError("Width must be positive")
         else:
-            print("I was called")
+            
             self.width = width
     
     @property
@@ -58,4 +58,10 @@ class Rectangle:
     def __lt__(self, other):
         if isinstance(other, Rectangle):
             return self.area() == other.area()
+			
+    def __eq__(self,other):
+        if  isinstance(other,Rectangle):
+            return self.width==other.width and self.height=other.height
+        else:
+             return False
         
