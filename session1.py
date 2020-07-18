@@ -3,9 +3,9 @@ def myfunc():
     n=len(string)
     arr=[]
     for i in range(n):
-      for j in range(i+1,n+1):
-          a=string[i:j]
-          arr.append(a)
+        for j in range(i+1,n+1):
+            a=string[i:j]
+            arr.append(a)
     print(arr)
 
 def my_func():
@@ -23,11 +23,11 @@ class Rectangle:
     def __init__(self, width, height):
         self.width = width #properties
         self.height = height
-		
+        
     @property
     def width(self):
         return self._width
-
+    
     @width.setter
     def width(self, new_width):
         if new_width <=0:
@@ -39,7 +39,7 @@ class Rectangle:
     @property
     def height(self):
         return self._height
-
+    
     @height.setter
     def height(self, new_height):
         if new_height <=0:
@@ -47,13 +47,14 @@ class Rectangle:
         else:
             self._height = new_height
     
-
-
+    
+    
     def area(self): #method
         return self.width*self.height
     
     def perimeter(self):
         return 2*(self.width + self.height)
+    
     
     def __lt__(self, other):
         if isinstance(other, Rectangle):
@@ -61,18 +62,18 @@ class Rectangle:
         else:
             print("I was called")
             raise NotImplementedError
-			
+        
     def __eq__(self,other):
         if  isinstance(other,Rectangle):
             return self.width==other.width and self.height==other.height
         else:
-             return False
-			 
+            return False
+        
     def __str__(self):
         return 'Rectangle: width={0}, height={1}'.format(self._width, self._height)
-		
-    def __com__(self):
-        if not isintance(other,Rectangle):
-           raise NotImplementedError
-           
+        
+    def __repr__(self):
+        return 'Rectangle({0},{1})'.format(self._width,self._width)
+        
+        
         
