@@ -63,7 +63,7 @@ class Rectangle:
 			
     def __eq__(self,other):
         if  isinstance(other,Rectangle):
-            return self.width==other.width and self.height=other.height
+            return self.width==other.width and self.height==other.height
         else:
              return False
 			 
