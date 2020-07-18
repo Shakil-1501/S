@@ -26,26 +26,26 @@ class Rectangle:
 		
     @property
     def width(self):
-        return self.width
+        return self._width
 
     @width.setter
-    def width(self, width):
-        if width <=0:
+    def width(self, new_width):
+        if new_width <=0:
             raise ValueError("Width must be positive")
         else:
             
-            self.width = width
+            self._width = new_width
     
     @property
     def height(self):
-        return self.height
+        return self._height
 
     @height.setter
-    def height(self, height):
-        if height <=0:
+    def height(self, new_height):
+        if new_height <=0:
             raise ValueError("Height must be positive")
         else:
-            self.height = height
+            self._height = new_height
     
 
 
@@ -57,7 +57,9 @@ class Rectangle:
     
     def __lt__(self, other):
         if isinstance(other, Rectangle):
-            return self.area() == other.area()
+            return self.area() < other.area()
+		else:
+		     return NotImplemented
 			
     def __eq__(self,other):
         if  isinstance(other,Rectangle):
@@ -67,4 +69,9 @@ class Rectangle:
 			 
     def __str__(self):
         return 'Rectangle: width={0}, height={1}'.format(self._width, self._height)
+		
+    def __com__(self):
+        if not isintance(other,Rectangle):
+           raise NotImplemented
+           
         
