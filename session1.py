@@ -58,8 +58,8 @@ class Rectangle:
     def __lt__(self, other):
         if isinstance(other, Rectangle):
             return self.area() < other.area()
-		else:
-		     return NotImplemented
+        else:
+            return NotImplemented
 			
     def __eq__(self,other):
         if  isinstance(other,Rectangle):
