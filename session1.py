@@ -59,7 +59,8 @@ class Rectangle:
         if isinstance(other, Rectangle):
             return self.area() < other.area()
         else:
-            return NotImplemented
+             print("I was called")
+            return NotImplementedError
 			
     def __eq__(self,other):
         if  isinstance(other,Rectangle):
@@ -72,6 +73,6 @@ class Rectangle:
 		
     def __com__(self):
         if not isintance(other,Rectangle):
-           raise NotImplemented
+           raise NotImplementedError
            
         
