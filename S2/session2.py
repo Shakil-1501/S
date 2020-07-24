@@ -77,8 +77,8 @@ def compare_strings_new(n):
     b = sys.intern('a long string that is not intered' * 200)
     for i in range(n):
         if a is b:
-            pass
-    char_list = list(a)
+            break
+    char_list = set(a)
     for i in range(n):
         if 'd' in char_list:
             pass
