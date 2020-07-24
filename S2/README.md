@@ -43,3 +43,24 @@ learning environment with maximum safety and minimal interruptions.
 
 I think this is enough.
 Good bye
+
+Almost. This amounts to more than a half of world population. And even
+though many scholars are concerned that spend too much time online, I
+believe that Internet is not only for fun. It is also a great way to make some
+extra pocket money without ever leaving the comfort of your home.
+Being a student taught me well that I should always seize an opportunity to
+make some cash and deal with student loans before it is too late. Since I
+don’t have much time, I was looking for a job in the neighborhood, or that
+would not take too long to get to. After some time spent on searching for
+the perfect idea, I came to the conclusion that working over the Internet is
+exactly what I, as a busy student, need. I do not have to leave my dorm to
+get places which saves me much time and gives a chance to work on my
+school assignments.
+Besides, working on the Internet is excellent because you get to learn
+various new technologies. I work as social media manager creating
+campaigns for local stores aiming to make their product known and loved in
+the area via social media. In the course of this work, I had to master several
+tools that collect popular news, analyze content trends, help me plan posts
+ahead of time, and even check my posts’ grammar. All these tools will come
+in handy later at a college or maybe even at work. Technologies are
+conquering the world, and being tech-savvy will definitely pay off.
