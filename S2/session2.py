@@ -78,7 +78,7 @@ def compare_strings_new(n):
     for i in range(n):
         if a is b:
             pass
-    char_list = list(a)
+    char_list = tuple(a)
     for i in range(n):
         if 'd' in char_list:
             pass
