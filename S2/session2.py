@@ -35,7 +35,7 @@ def add_something(collection: List[Something], i: int):
     something.something_new = SomethingNew(i, something)
     collection.append(something)
 
-def reserved_Function():
+def reserved_function():
     # to be used in future if required
     pass
 
@@ -71,7 +71,16 @@ def compare_strings_old(n):
 
 # YOU NEED TO CHANGE THIS PROGRAM
 def compare_strings_new(n):
-    time.sleep(6) # remove this line, this is just to simulate your "slow" code
+    #time.sleep(6) # remove this line, this is just to simulate your "slow" code
+    a = 'a long string that is not intered' * 200
+    b = 'a long string that is not intered' * 200
+    for i in range(n):
+        if a in b:
+            pass
+    char_list = set(a)
+    for i in range(n):
+        if 'd' in char_list:
+            pass
 
 
 
