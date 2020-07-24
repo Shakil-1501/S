@@ -1,7 +1,9 @@
 from typing import List
 import time
 import sys
-    
+import weakref
+
+
     # Here in this code we will be leaking memory because we are creating cyclic reference. 
     # Find that we are indeed making cyclic references.
     # Eventually memory will be released, but that is currently not happening immediately.
@@ -9,31 +11,32 @@ import sys
     # Refer to test_clear_memory Test in test_session2.py to see how we're crudely finding that
     # this code is sub-optimal.
 class Something(object):
-    
+
     def __init__(self):
         super().__init__()
         self.something_new = None
-    
-    
+
+
     def __repr__(self):
-        return 'object at {0}'.format(id(object))
-    
-    
+        return 'Something Class'
+
+
+
 class SomethingNew(object):
-    
+
     def __init__(self, i: int = 0, something: Something = None):
         super().__init__()
         self.i = i
         self.something = something
-    
-    
+
+
     def __repr__(self):
-        return 'object at {0}'.format(id(object))
-    
-    
+        return 'Something Class'
+
+
 def add_something(collection: List[Something], i: int):
     something = Something()
-    something.something_new = SomethingNew(i, something)
+    something.something_new = SomethingNew(i, weakref.ref(something))
     collection.append(something)
 
 def reserved_function():
@@ -42,8 +45,7 @@ def reserved_function():
 
 def clear_memory(collection: List[Something]):
     # you probably need to add some comment here
-    
-    
+
     collection.clear()
 
 
