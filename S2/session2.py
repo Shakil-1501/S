@@ -16,7 +16,7 @@ class Something(object):
     
     
     def __repr__(self):
-        return 'object at'
+        return 'object at {0}'.format(id(object))
     
     
 class SomethingNew(object):
@@ -28,7 +28,7 @@ class SomethingNew(object):
     
     
     def __repr__(self):
-        return 'object at'
+        return 'object at {0}'.format(id(object))
     
     
 def add_something(collection: List[Something], i: int):
