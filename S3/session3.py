@@ -15,7 +15,7 @@ def encoded_from_base10(number, base, digit_map):
     '''
     
     if base<2 or base>36:
-        raise ValueError("Please enter the correct base")
+        raise ValueError("The base is not correct")
     
     if len(digit_map)<base:
         raise ValueError
@@ -33,6 +33,7 @@ def encoded_from_base10(number, base, digit_map):
     resultant=''
     for d in digits:
         resultant += digit_map[d]
+    
     return resultant
 
 
@@ -43,7 +44,14 @@ def float_equality_testing(a, b):
         - rel_tol = 1e-12
         - abs_tol = 1e-05
     '''
-    return a == b
+    rel_tol=1e-12
+    abs_tol=1e-05
+    tol=max(rel_tol*(max(abs(a),abs(b)),abs_tol)
+    if abs(a-b)<tol:
+        d=True
+    else:
+        d=False
+    return d
 
 
 def manual_truncation_function(f_num):
