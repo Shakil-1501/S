@@ -1,3 +1,4 @@
+from fractions import Fraction
 def encoded_from_base10(number, base, digit_map):
     '''
     This function returns a string encoding in the "base" for the the "number" using the "digit_map"
@@ -30,6 +31,7 @@ def manual_truncation_function(f_num):
     This function emulates python's MATH.TRUNC method. It ignores everything after the decimal point. 
     It must check whether f_num is of correct type before proceed. You can use inbuilt constructors like int, float, etc
     '''
+    f=Fraction(f_num)
 
     return f_num
 
