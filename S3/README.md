@@ -1,7 +1,7 @@
 
   ###### Author Info :
    
-- Mail : [jagatabhay@gmail.com](jagatabhay@gmail.com)
+- Mail : [md.shakiluzzaman@gmail.com](md.shakiluzzaman@gmail.com)
 
 
 # Session3 - Numeric Types
