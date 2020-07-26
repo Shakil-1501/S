@@ -34,7 +34,7 @@ def encoded_from_base10(number, base, digit_map):
     for d in digits:
         resultant += digit_map[d]
     if number<0:
-        while number!=0:
+        while number<0:
             m=number % base
             number=number // base
             digits.insert(0,m)
