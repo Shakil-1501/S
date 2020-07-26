@@ -46,8 +46,8 @@ def float_equality_testing(a, b):
     '''
     rel_tol=1e-12
     abs_tol=1e-05
-    tol=max(rel_tol*(max(abs(a),abs(b)),abs_tol)
-    if abs(a-b)<tol:
+    tol=max(rel_tol*(max(abs(a),abs(b))),abs_tol)
+    if abs(a-b) < tol:
         d=True
     else:
         d=False
