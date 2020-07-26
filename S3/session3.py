@@ -59,7 +59,7 @@ def manual_truncation_function(f_num):
     This function emulates python's MATH.TRUNC method. It ignores everything after the decimal point. 
     It must check whether f_num is of correct type before proceed. You can use inbuilt constructors like int, float, etc
     '''
-    f=Fraction(f_num)
+    f_num = f_num.__trunc__()
 
     return f_num
 
@@ -68,6 +68,7 @@ def manual_rounding_function(f_num):
     This function emulates python's inbuild ROUND function. You are not allowed to use ROUND function, but
     expected to write your one manually.
     '''
+    f_num = f_num.__round__()
 
     return f_num
 
