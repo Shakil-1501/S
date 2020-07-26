@@ -13,18 +13,18 @@ def encoded_from_base10(number, base, digit_map):
     - you cannot use any in-built functions in the MATH module
 
     '''
-    
+
     if base<2 or base>36:
         raise ValueError("The base is not correct")
-    
+
     if len(digit_map)<base:
         raise ValueError
-    
+
     for i in digit_map:
         if digit_map.count(i)>1:
             raise ValueError("There is repeating character in digit_map")
-    
-    
+
+
     digits=[]
     while number>0:
         m=number % base
@@ -41,7 +41,7 @@ def encoded_from_base10(number, base, digit_map):
         resultant=''
     for d in digits:
         resultant += digit_map[d]
-        
+
     '''
     if number<0 :
         number=-number
