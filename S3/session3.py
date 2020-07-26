@@ -13,7 +13,23 @@ def encoded_from_base10(number, base, digit_map):
     - you cannot use any in-built functions in the MATH module
 
     '''
-    return '123ABC'
+    try:
+        if base<2 or base>36:
+            raise ValueError
+    except ValueError:
+        print("Please enter the correct base)
+    if len(digit_map<base):
+        raise ValueError
+    try: 
+        for i in (len(digit_map)):
+            if digit_map.count(i)>1:
+                raise ValueError
+    except ValueError:
+        print("There is repeating character in digit_map)
+    resultant=''
+    for d in number:
+        resultant += map[d]
+    return resultant
 
 
 def float_equality_testing(a, b):
