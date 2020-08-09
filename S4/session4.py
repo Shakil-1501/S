@@ -3,6 +3,7 @@ import time
 import sys
 import weakref
 import random
+import math
 
 class Qualean:
        
@@ -25,8 +26,38 @@ class Qualean:
         
     def __eq__(self,other):
         if  isinstance(other,Qualean):
-            return self.k==self.k 
+            return self.k==other.k 
         else:
             return False
 
+    def __le__(self,other):
+        if isinstance(other,Qualean):
+            return self.k <=other.k
+        else:
+            raise NotImplementedError
 
+    def __gt__(self,other):
+        if isinstance(other,Qualean):
+            return self.k > other.k
+        else:
+            raise NotImplementedError
+
+    def __ge__(self,other):
+        if isinstance(other,Qualean):
+            return self.k >=other.k
+        else:
+            raise NotImplementedError
+
+    def __add__(self,other):
+        if isinstance(other,Qualean):
+            total=self.k+other.k
+            return total
+        else:
+            raise NotImplementedError
+
+    def __sqrt__(self,other):
+       if isinstance(other,Qualean):
+            total=math.sqrt(other.k)
+            return total
+        else:
+            raise NotImplementedError
