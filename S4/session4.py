@@ -64,3 +64,41 @@ class Qualean:
             return total
         else:
             raise NotImplementedError
+
+    def __mul__(self,other):
+        if isinstance(other,Qualean):
+            total=self.k*other.k
+            return total
+        else:
+            raise NotImplementedError
+
+    def __and__(self,other):
+        if isinstance(other,Qualean):
+            return self.k and other.k
+        else:
+            raise NotImplementedError
+
+    def __or__(self,other):
+        if isinstance(other,Qualean):
+            return self.k or other.k
+        else:
+            raise NotImplementedError
+
+    def __bool__(self):
+        if isinstance(self,Qualean):
+            return bool(self.k)
+        else:
+            raise NotImplementedError
+
+    def __float__(self):
+        if isinstance(self,Qualean):
+            return float(self.k)
+        else:
+            raise NotImplementedError
+'''
+    def __invertsign__(self,other):
+        if isinstance(other,Qualean):
+            return self.k and other.k
+        else:
+            raise NotImplementedError
+'''
