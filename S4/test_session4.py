@@ -3,6 +3,7 @@ import os
 import session4
 import inspect
 import re
+import random
 
 README_CONTENT_CHECK_FOR = ['__and__' ,
                             '__or__',
@@ -67,7 +68,7 @@ def test_identation():
 
 #6
 def test_funcation_had_cap_letter():
-    functions = inspect.members(session4, inspect.isfunction() )
+    functions = inspect.getmembers(session4, inspect.isfunction() )
     for function in function:
         assert len(re.findall('([A-Z])', function[0])) == 0, "You have used Capital letter(s) in your function names"
 
@@ -78,5 +79,16 @@ def test_repr():
 
 
 #8
-def test_str():
+def test_str();
     assert 'Object at' not in session4.__str__() , "Kindly return meaningful message from __str__"
+
+
+#9 Less than
+def test_lt_check():
+    a = random.uniform(-1, 1)
+    assert session4.__lt__(a) , "__lt__ is not properly implementated "
+
+
+#10
+def test_le_check():
+    a = randm.uniform(-1,1)
