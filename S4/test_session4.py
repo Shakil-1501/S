@@ -90,6 +90,9 @@ def test_lt_check():
 
 
 #10 Less than and equals to
-def test_le_check():
+def test_function_exist_check():
     a = random.uniform(-1,1)
-    assert session4.__le__(a) , "__le__ is not properly implemented"
+    assert session4.__le__(a) , "__le__ is not implemented"
+    assert session4.__add__(a) , "__ge__ is implementated"
+    assert session4.__gt__(a) , " __gt__ is not implementated "
+    assert session4.__and__(a) , "__add__ is not implementated"
