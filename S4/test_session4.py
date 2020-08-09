@@ -79,7 +79,7 @@ def test_repr():
 
 
 #8
-def test_str();
+def test_str():
     assert 'Object at' not in session4.__str__() , "Kindly return meaningful message from __str__"
 
 
