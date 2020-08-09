@@ -9,7 +9,7 @@ class Qualean:
 
     def __init__(self,choice):
         self.choice = choice
-        self.k = round(choice*(random.uniform(-1,1)))
+        self.k = round(choice*(random.uniform(-1,1)),10)
 
     def __str__(self):
         return 'Qualean: choice={0}, k={1}'.format(self.choice, self.k)
@@ -58,9 +58,9 @@ class Qualean:
         else:
             raise NotImplementedError
 
-    def __sqrt__(self,other):
-        if isinstance(other,Qualean):
-            total=math.sqrt(other.k)
+    def __sqrt__(self):
+        if isinstance(self,Qualean):
+            total=math.sqrt(self.k)
             return total
         else:
             raise NotImplementedError
