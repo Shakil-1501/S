@@ -56,7 +56,7 @@ class Qualean:
             raise NotImplementedError
 
     def __sqrt__(self,other):
-       if isinstance(other,Qualean):
+        if isinstance(other,Qualean):
             total=math.sqrt(other.k)
             return total
         else:
