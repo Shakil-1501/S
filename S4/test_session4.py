@@ -92,3 +92,4 @@ def test_lt_check():
 #10
 def test_le_check():
     a = randm.uniform(-1,1)
+    assert session4.__le__(a) , "__le__ is not properly implemented"
