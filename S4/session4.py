@@ -4,7 +4,7 @@ import sys
 import weakref
 import random
 
-Class Qualean:
+class Qualean:
        
     def __init__(self,choice):
         self.choice = choice
