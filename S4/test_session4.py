@@ -25,7 +25,7 @@ README_CONTENT_CHECK_FOR = ['__and__' ,
 
 #1
 def test_readme_exists():
-    assert os.path.isfile('README.md') , "README File Missing "
+    assert os.path.isfile("README.md"), "README.md file missing!"
 
 
 #2
@@ -54,7 +54,7 @@ def test_readme_for_formatting():
     readme = open('README.md','r')
     content = readme.read().split()
     readme.close()
-    assert content.count('#') > 10 , "Kindly format the README.md"
+    assert content.count('#') >= 10 , "Kindly format the README.md"
 
 
 #5
@@ -68,7 +68,7 @@ def test_identation():
 
 #6
 def test_funcation_had_cap_letter():
-    functions = inspect.getmembers(session4, inspect.isfunction() )
+    functions = inspect.getmembers(session4, inspect.isfunction )
     for function in function:
         assert len(re.findall('([A-Z])', function[0])) == 0, "You have used Capital letter(s) in your function names"
 
@@ -89,7 +89,7 @@ def test_lt_check():
     assert session4.__lt__(a) , "__lt__ is not properly implementated "
 
 
-#10
+#10 Less than and equals to
 def test_le_check():
     a = random.uniform(-1,1)
     assert session4.__le__(a) , "__le__ is not properly implemented"
