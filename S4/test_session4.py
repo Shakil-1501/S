@@ -25,7 +25,7 @@ README_CONTENT_CHECK_FOR = ['__and__' ,
 
 #1
 def test_readme_exists():
-    assert os.file.isfile('README.md') , "README File Missing "
+    assert os.path.isfile('README.md') , "README File Missing "
 
 
 #2
