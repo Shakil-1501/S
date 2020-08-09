@@ -1,9 +1,9 @@
 # Session 4 
 ---
 ## Objective
-1. Write a Qualean class that is inspired by Boolean+Quantum concepts. We can assign it only 3 possible real states. True, False, and Maybe (1, 0, -1) but it internally picks an imaginary state. The moment you assign it a real number, it immediately finds an imaginary number random.uniform(-1, 1) and multiplies with it and stores that number internally after using Bankers rounding to 10th decimal place.  
+- Write a Qualean class that is inspired by Boolean+Quantum concepts. We can assign it only 3 possible real states. True, False, and Maybe (1, 0, -1) but it internally picks an imaginary state. The moment you assign it a real number, it immediately finds an imaginary number random.uniform(-1, 1) and multiplies with it and stores that number internally after using Bankers rounding to 10th decimal place.  
  
-1. It implements these functions (with exactly the same names) 
+- It implements these functions (with exactly the same names) 
 
 ``` html 
     __and__,  __or__, __repr__, __str__, __add__, __eq__, __float__,
@@ -11,9 +11,15 @@
     __bool__
 
 ```
-1. Write a test file, that tests all of the functions mentioned above + the other basic ones 
-1. Test file must contain at least 25 tests
+- Write a test file, that tests all of the functions mentioned above + the other basic ones 
+- Test file must contain at least 25 tests
 
+---
+## Files
+ - Test File : [.py file]()
+ - Code: [Method Implemantation]()
+ - colab File: [![]()]()
+---
 
 ## Test Cases Results
 
@@ -29,3 +35,9 @@
 | 8 | __str__ proper implementaton | Pass |
 | 9 | __lt__ implementation check | Pass |
 | 10 | __le__ implementation check | Pass | 
+
+---
+
+### Author Info
+- Email :
+- Linkedin :
