@@ -97,7 +97,7 @@ def test_lt_check():
 def test_mul_check():
     q1 = session4.Qualean(random.choice([-1 , 0 , 1]))
     q2 = session4.Qualean(random.choice([-1 , 0 , 1]))
-    assert q1*q2
+    assert q1.__mul__(q2) == q1*q2
 
 
 #11
