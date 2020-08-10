@@ -102,9 +102,9 @@ def test_mul_check():
 
 #11
 def test_add_check():
-    q1 = session4.Qualean(random.choice([-1 , 0 , 1]))
-    q2 = session4.Qualean(random.choice([-1 , 0 , 1]))
-    assert q1.__and__(q2) == q1+q2
+    a = session4.Qualean(random.choice([-1 , 0 , 1]))
+    b = session4.Qualean(random.choice([-1 , 0 , 1]))
+    assert a.__add__(b)==a+b
 
 
 #12
