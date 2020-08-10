@@ -4,6 +4,7 @@ import sys
 import weakref
 import random
 import math
+import cmath
 
 class Qualean:
 
@@ -60,7 +61,7 @@ class Qualean:
 
     def __sqrt__(self):
         if isinstance(self,Qualean):
-            total=math.sqrt(self.k)
+            total=cmath.sqrt(self.k)
             return total
         else:
             raise NotImplementedError

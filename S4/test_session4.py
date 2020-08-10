@@ -1,6 +1,7 @@
 import pytest , os , session4 , inspect , re , random
 from decimal import Decimal
-
+import math
+import cmath
 
 README_CONTENT_CHECK_FOR = ['__and__' ,
                             '__or__',
@@ -167,7 +168,7 @@ def test_eq_check():
 def test_sqrt_check():
     a = session4.Qualean(random.choice([-1 , 0 , 1]))
     #b = session4.Qualean(random.choice([-1 , 0 , 1]))
-    assert a.__sqrt__() == math.sqrt(a)
+    assert a.__sqrt__() == cmath.sqrt(a)
 
 
 
