@@ -116,10 +116,23 @@ def test_and_check():
 
 #13
 def test_or_check():
-    q1 = session4.Qualean(random.choice([-1 , 0 , 1]))
-    q2 = session4.Qualean(random.choice([-1 , 0 , 1]))
+    a = session4.Qualean(random.choice([-1 , 0 , 1]))
+    b = session4.Qualean(random.choice([-1 , 0 , 1]))
     assert a.__or__(b) == float(a or b)
 
+
+#14
+def test_bool_check():
+    a = session4.Qualean(random.choice([-1 , 0 , 1]))
+    #b = session4.Qualean(random.choice([-1 , 0 , 1]))
+    assert a.__bool__() == bool(a)
+
+
+#15
+def test_float_check():
+    a = session4.Qualean(random.choice([-1 , 0 , 1]))
+    #b = session4.Qualean(random.choice([-1 , 0 , 1]))
+    assert a.__float__() == float(a)
 
 
 
