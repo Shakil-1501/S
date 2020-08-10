@@ -101,17 +101,24 @@ def test_mul_check():
 
 
 #11
-def test_and_check():
+def test_add_check():
     q1 = session4.Qualean(random.choice([-1 , 0 , 1]))
     q2 = session4.Qualean(random.choice([-1 , 0 , 1]))
-    assert q1.__and__(q2) == q1 and q2
+    assert q1.__and__(q2) == q1+q2
 
 
 #12
+def test_and_check():
+    q1 = session4.Qualean(random.choice([-1 , 0 , 1]))
+    q2 = session4.Qualean(random.choice([-1 , 0 , 1]))
+    assert q1.__and__(q2) == (q1 and q2)
+
+
+#13
 def test_or_check():
     q1 = session4.Qualean(random.choice([-1 , 0 , 1]))
     q2 = session4.Qualean(random.choice([-1 , 0 , 1]))
-    assert q1.__or__(q2) == q1 or q2
+    assert q1.__or__(q2) == (q1 or q2)
 
 
 
