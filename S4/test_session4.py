@@ -135,6 +135,37 @@ def test_float_check():
     assert a.__float__() == float(a)
 
 
+#16
+def test_gt_check():
+    q1 = session4.Qualean(random.choice([-1 , 0 , 1]))
+    q2 = session4.Qualean(random.choice([-1 , 0 , 1]))
+    assert type(q1.__gt__(q2)) is bool
+
+
+#17
+def test_le_check():
+    q1 = session4.Qualean(random.choice([-1 , 0 , 1]))
+    q2 = session4.Qualean(random.choice([-1 , 0 , 1]))
+    assert type(q1.__le__(q2)) is bool
+
+
+#18
+def test_ge_check():
+    q1 = session4.Qualean(random.choice([-1 , 0 , 1]))
+    q2 = session4.Qualean(random.choice([-1 , 0 , 1]))
+    assert type(q1.__ge__(q2)) is bool
+
+
+#19
+def test_eq_check():
+    q1 = session4.Qualean(random.choice([-1 , 0 , 1]))
+    q2 = session4.Qualean(random.choice([-1 , 0 , 1]))
+    assert type(q1.__eq__(q2)) is bool
+
+
+
+
+
 
 
 
