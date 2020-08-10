@@ -163,7 +163,11 @@ def test_eq_check():
     assert type(q1.__eq__(q2)) is bool
 
 
-
+#20
+def test_sqrt_check():
+    a = session4.Qualean(random.choice([-1 , 0 , 1]))
+    #b = session4.Qualean(random.choice([-1 , 0 , 1]))
+    assert a.__sqrt__() == math.sqrt(a)
 
 
 
