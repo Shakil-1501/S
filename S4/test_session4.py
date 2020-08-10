@@ -101,11 +101,33 @@ def test_mul_check():
 
 
 #11
+def test_and_check():
+    q1 = session4.Qualean(random.choice([-1 , 0 , 1]))
+    q2 = session4.Qualean(random.choice([-1 , 0 , 1]))
+    assert q1.__and__(q2) == q1 and q2
+
+
+#12
+def test_or_check():
+    q1 = session4.Qualean(random.choice([-1 , 0 , 1]))
+    q2 = session4.Qualean(random.choice([-1 , 0 , 1]))
+    assert q1.__or__(q2) == q1 or q2
+
+
+
+
+
+
+
+
+
+
+'''
 def test_sqrtcheck_with_Decimal():
     a = random.choice([-1,0,1])
     q = session4.Qualean(a)
     assert q.__sqrt__() == Decimal(a).sqrt() , "session4.Qualean.__sqrt__(a) == Decimal(a).sqrt() returns different value"
-
+'''
 
 
 
